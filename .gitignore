@@ -49,3 +49,4 @@ roles/**
 
 output-this/
 vagrant_home/
+.vagrant
