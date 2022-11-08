@@ -1,0 +1,51 @@
+# Packet ignore list
+
+# Cache objects
+packer_cache/
+
+# Crash log
+crash.log
+
+# https://www.packer.io/guides/hcl/variables
+# Exclude all .pkrvars.hcl files, which are likely to contain sensitive data, 
+# such as password, private keys, and other secrets. These should not be part of 
+# version control as they are data points which are potentially sensitive and 
+# subject to change depending on the environment.
+#
+*.pkrvars.hcl
+
+# For built boxes
+*.box
+
+# Ansible ignore list
+
+# Ansible runtime and backups
+*.original
+*.tmp
+*.bkp
+*.retry
+*.*~
+
+# Tower runtime roles 
+roles/**
+!roles/requirements.yml
+
+# Try tyo avoid any plain-text passwords 
+*pwd*
+*pass*
+*password*
+*.txt
+
+# Exclude all binaries
+*.bin
+*.jar
+*.tar
+*.zip
+*.gzip
+*.tgz
+
+
+### CUSTOM
+
+output-this/
+vagrant_home/
