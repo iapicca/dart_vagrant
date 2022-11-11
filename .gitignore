@@ -45,8 +45,10 @@ roles/**
 *.tgz
 
 
-### CUSTOM
+### Vagrant
 
 output-this/
 vagrant_home/
 .vagrant
+Vagrantfile
+*Vagrantfile

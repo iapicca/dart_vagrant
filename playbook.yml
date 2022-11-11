@@ -31,4 +31,3 @@
     - name: 'version'
       command: |
         dart --version
-

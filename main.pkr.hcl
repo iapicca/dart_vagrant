@@ -15,6 +15,7 @@ packer{
 
 source "vagrant" "this" {
   communicator = "ssh"
+  # see https://app.vagrantup.com/perk/boxes/ubuntu-2204-arm64
   source_path = "perk/ubuntu-2204-arm64"
   provider = "qemu"
   add_force = true
